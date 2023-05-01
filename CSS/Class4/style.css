@@ -1,0 +1,12 @@
+.heading{
+    color:#f00;
+    font-size:50px;
+    font-weight: 900;
+    text-transform: uppercase; /*capitalize, uppercase, lowercase*/
+    letter-spacing: 10px;
+    word-spacing: 100px;
+    text-align: center; /*left, center, right, justify*/
+}
+.heading2{
+    color:blue
+}
