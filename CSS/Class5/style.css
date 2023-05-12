@@ -1,0 +1,40 @@
+*{
+    margin-bottom: 30px;
+}
+
+.heading, .heading2{
+    color:blue;
+}
+
+/* +, >, ~ (sibling) */
+.header p{
+    color:blue;
+}
+
+/* nav.main-navigation > ul > li > a{
+    color:red
+} */
+
+
+/* nav.main-navigation > ul > li ~ p{
+    color:red
+} */
+
+
+nav.main-navigation > ul > li + p{
+    color:red
+}
+
+
+nav.main-navigation > ul > li:last-child > a{
+    color:red
+}
+
+
+.navigation{
+    width: 500px;
+    background-color: #222;
+}
+.navigation a{
+    color:#fff;
+}

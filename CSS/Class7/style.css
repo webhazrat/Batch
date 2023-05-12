@@ -1,0 +1,17 @@
+.color-block{
+    height: 800px;
+    width: 100%;
+    background-color: rgba(4, 170, 109, 0.3);
+    /* background-image: url("https://cdn-icons-png.flaticon.com/512/427/427487.png");
+    background-position: top left;
+    background-repeat: no-repeat; */
+
+
+    background-image: url("https://images.pexels.com/photos/14284251/pexels-photo-14284251.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-image:url("https://th.bing.com/th/id/OIP.2QPmEXQwbEOOax2p2sUbiwHaHa?pid=ImgDet&rs=1"); */
+    /* background-repeat: no-repeat; //no-repeat, repeat, repeat-x, repeat-y */
+
+}
