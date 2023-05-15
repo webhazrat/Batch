@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+.flag{
+    width: 500px;
+    height: 300px;
+    background-color: #008000;
+    border:50px solid #f00;
+    border-radius: 100px;
+    /*
+    border-bottom: 10px solid #f00;
+    border-width: 10px;
+    border-color: #f00;
+    border-style: dotted; /solid, dashed, dotted */
+} 
+
+
+/* .flag{
+    width: 500px;
+    height: 300px;
+    background-color: #008000;
+    border-left:20px solid transparent;
+}
+.flag:hover{
+    border-left-color: #f00;
+} */
