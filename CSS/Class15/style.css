@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+/* navbar */
+nav {
+  background-color: #333333;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px;
+  display: inline-block;
+  transition: 0.5s;
+}
+nav ul li a.active {
+  background-color: #f00;
+}
+nav ul li a:hover {
+  background-color: #111;
+}
+
+/* float css*/
+.float {
+  overflow: auto;
+}
+.float button {
+  float: left;
+  padding: 20px 50px;
+}
+.float a {
+  float: right;
+}
+
+/* float2 css */
+.float2 {
+  overflow: auto;
+}
+.float2 div {
+  width: 50%;
+  padding: 30px;
+}
+.float2 div:first-child {
+  background-color: blueviolet;
+  float: left;
+}
+
+.float2 div:last-child {
+  background-color: aqua;
+  float: right;
+}
+
+/* float3 css */
+.float3 {
+  overflow: auto;
+  width: 500px;
+}
+.float3 img {
+  float: left;
+  margin-right: 10px;
+}
+
+/* flaot4 css */
+.float4 {
+  overflow: auto;
+}
+
+.float4 div {
+  float: left;
+  width: 33.33%;
+  background-color: #bbbbbb;
+  padding: 100px;
+}
+
+.float4 div:nth-child(odd) {
+  background-color: #cccccc;
+}
+.float4 div:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.marginAuto {
+  background-color: #f00;
+  width: 300px;
+  height: 150px;
+  margin-left: auto;
+}
