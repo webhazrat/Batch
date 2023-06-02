@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* form css */
+.userForm {
+  padding: 50px;
+  background-color: #f5f5f5;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  margin-bottom: 5px;
+  display: block;
+}
+.form-group label span {
+  color: red;
+}
+.form-control {
+  /* width: 200px; */
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid transparent;
+  outline: 0;
+  transition: 0.5s;
+}
+.form-control:not(textarea) {
+  height: 46px;
+}
+
+.form-control::placeholder {
+  color: #bbb;
+}
+.form-control:focus {
+  border: 2px solid #aaa;
+  background-color: #f00;
+}
+
+button[type="submit"] {
+  height: 46px;
+  padding: 0 15px;
+  border: 0;
+  background-color: green;
+  color: #ffffff;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* counters css */
+
+.counters {
+  counter-reset: count;
+}
+.counters div {
+  margin-bottom: 10px;
+}
+
+.counters div:before {
+  counter-increment: count;
+  content: counter(count);
+
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  border-radius: 100%;
+}
