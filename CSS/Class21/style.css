@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --navBg: #282a35;
+  --panelBg: #e7e9eb;
+  --primaryBg: #059862;
+  --hoverBg: #cccccc;
+}
+
+.flex-container {
+  height: 300px;
+  display: flex;
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  /*justify-content: start; /*start, center, end, space-between, space-around, space-evenly*/
+  /*align-items: stretch; /*start, center, end*/
+  /* align-content: space-evenly; */
+  gap: 15px;
+  /* height: 100vh; */
+  background-color: blanchedalmond;
+}
+
+.flex-container div {
+  width: 150px;
+  /* height: 80px; */
+  background-color: var(--navBg);
+  font-size: 40px;
+  color: #fff;
+}
