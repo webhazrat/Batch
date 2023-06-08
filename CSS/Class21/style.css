@@ -10,17 +10,20 @@ body {
   --panelBg: #e7e9eb;
   --primaryBg: #059862;
   --hoverBg: #cccccc;
+
+  --navWidth: 350px;
 }
 
 .flex-container {
-  height: 300px;
+  height: 800px;
   display: flex;
+  flex-direction: row;
   /* flex-direction: column-reverse; */
   /* flex-wrap: wrap; */
   /*justify-content: start; /*start, center, end, space-between, space-around, space-evenly*/
   /*align-items: stretch; /*start, center, end*/
   /* align-content: space-evenly; */
-  gap: 15px;
+  gap: 30px;
   /* height: 100vh; */
   background-color: blanchedalmond;
 }
@@ -29,6 +32,37 @@ body {
   width: 150px;
   /* height: 80px; */
   background-color: var(--navBg);
+  width: var(--navWidth);
   font-size: 40px;
   color: #fff;
+  position: fixed;
+  left: calc(var(--navWidth) * -1);
+}
+
+/* parent
+
+flex-direction: row | column | row-reverse | column-reverse
+flex-wrap: nowrap | wrap | wrap-reserve
+justify-content: start | flex-start | center | end | flex-end | space-between | space-around | space-evenly
+align-items: start | flex-start | center | end | flex-end | stretch
+align-content: start | flex-start | center | end | flex-end | space-between | space-around | space-evenly
+*/
+
+/* child
+
+order: 1
+flex-grow: 1
+flex-shrink: 1
+flex-basis: 100px
+align-self: start | flex-start | center | end | flex-end 
+*/
+
+.navigation {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
