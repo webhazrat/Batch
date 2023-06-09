@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: var(--dark-bg);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  color: #fff;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+:root {
+  --dark-bg: #00040f;
+  --light-gradient: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+  --dark-gradient: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* navigation */
+nav {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-brand img {
+  height: 40px;
+  width: auto;
+}
+nav .navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 56px;
+}
+nav .navbar-nav li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+nav .navbar-nav li a.active {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* banner */
+.banner-description {
+  flex-basis: 50%;
+}
+.discount {
+  background: var(--dark-gradient);
+  border-radius: 10px;
+  padding: 6px 15px;
+  padding-right: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+.discount img {
+  width: 40px;
+  height: 40px;
+}
+.discount p {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+.discount p span {
+  color: rgba(255, 255, 255, 1);
+}
+.banner-description h1 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 100px;
+  margin: 12px 0 40px 0;
+}
+
+.banner-description > p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 30px;
+  max-width: 500px;
+}
+
+.banner-img {
+  flex-basis: 45%;
+}
+.banner-img img {
+  width: 100%;
+}
