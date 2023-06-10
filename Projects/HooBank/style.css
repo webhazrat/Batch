@@ -49,6 +49,10 @@ h6 {
   background-clip: text;
 }
 
+.py {
+  padding: 90px 0;
+}
+
 .container {
   max-width: 1400px;
   margin-left: auto;
@@ -64,6 +68,15 @@ h6 {
 
 .align-center {
   align-items: center;
+}
+
+.primary-btn {
+  padding: 18px 33px;
+  display: inline-block;
+  text-decoration: none;
+  color: #00040e;
+  background: var(--light-gradient);
+  border-radius: 10px;
 }
 
 /* navigation */
@@ -133,4 +146,77 @@ nav .navbar-nav li a.active {
 }
 .banner-img img {
   width: 100%;
+}
+
+/* statistics */
+.statistics-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.statistics-item h2 {
+  font-size: 40px;
+}
+.statistics-item p {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* business */
+.business-description {
+  flex-basis: 45%;
+}
+.business-description h2 {
+  font-size: 48px;
+  line-height: 76px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.business-description p {
+  margin-bottom: 40px;
+}
+.business-description p,
+.business-feature-item > div p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 30px;
+}
+
+.business-features {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.business-feature-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 25px 20px;
+  border-radius: 20px;
+}
+.business-feature-item.active,
+.business-feature-item:hover {
+  background: var(--dark-gradient);
+}
+.business-feature-item span {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  background: rgba(9, 151, 124, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  flex: 0 0 64px;
+}
+
+.business-feature-item span img {
+  width: 30px;
+  height: 30px;
+}
+
+.business-feature-item > div h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
 }
