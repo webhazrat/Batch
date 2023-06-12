@@ -163,20 +163,30 @@ nav .navbar-nav li a.active {
 }
 
 /* business */
-.business-description {
+.business-description,
+.billing-description,
+.card-deal-description {
   flex-basis: 45%;
 }
-.business-description h2 {
+.business-description h2,
+.billing-description h2,
+.card-deal-description h2,
+.testimonial-title h2 {
   font-size: 48px;
   line-height: 76px;
   font-weight: 600;
   margin-bottom: 24px;
 }
-.business-description p {
+.business-description p,
+.billing-description p,
+.card-deal-description p {
   margin-bottom: 40px;
 }
 .business-description p,
-.business-feature-item > div p {
+.billing-description p,
+.business-feature-item > div p,
+.card-deal-description p,
+.testimonial-title p {
   color: rgba(255, 255, 255, 0.7);
   line-height: 30px;
 }
@@ -219,4 +229,81 @@ nav .navbar-nav li a.active {
   margin-bottom: 8px;
   font-size: 18px;
   font-weight: 600;
+}
+
+/* billing */
+.billing-img,
+.card-deal-img {
+  flex-basis: 45%;
+}
+.billing-img img,
+.card-deal-img img {
+  width: 100%;
+}
+
+.billing .app {
+  display: flex;
+  gap: 20px;
+}
+.billing .app a img {
+  height: 50px;
+  width: auto;
+}
+
+/* testimonial */
+.testimonial-title {
+  gap: 200px;
+  margin-bottom: 60px;
+}
+.testimonial-title h2 {
+  flex-basis: 40%;
+}
+.testimonial-title p {
+  flex-basis: 40%;
+}
+
+.testimonial-items {
+  gap: 60px;
+}
+.testimonial-item.active,
+.testimonial-item:hover {
+  background: var(--dark-gradient);
+}
+.testimonial-item {
+  padding: 60px 40px;
+  border-radius: 20px;
+  flex-basis: 33.33%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.testimonial-item > img {
+  height: 27px;
+  width: auto;
+  margin-bottom: 40px;
+}
+.testimonial-item > p {
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.reviewer img {
+  width: 60px;
+  height: 60px;
+}
+.reviewer h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.reviewer span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 300;
 }
