@@ -57,6 +57,8 @@ h6 {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .row {
@@ -85,7 +87,8 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-nav .nav-brand img {
+nav .nav-brand img,
+.footer-item a img {
   height: 40px;
   width: auto;
 }
@@ -171,7 +174,8 @@ nav .navbar-nav li a.active {
 .business-description h2,
 .billing-description h2,
 .card-deal-description h2,
-.testimonial-title h2 {
+.testimonial-title h2,
+.cta-description h2 {
   font-size: 48px;
   line-height: 76px;
   font-weight: 600;
@@ -186,7 +190,9 @@ nav .navbar-nav li a.active {
 .billing-description p,
 .business-feature-item > div p,
 .card-deal-description p,
-.testimonial-title p {
+.testimonial-title p,
+.cta-description p,
+.footer-item p {
   color: rgba(255, 255, 255, 0.7);
   line-height: 30px;
 }
@@ -306,4 +312,80 @@ nav .navbar-nav li a.active {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   font-weight: 300;
+}
+
+/* partners */
+.partners-logo a img {
+  height: 45px;
+  width: auto;
+}
+
+/* CTA */
+.cta-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--dark-gradient);
+  padding: 72px 95px;
+  border-radius: 20px;
+}
+.cta-description p {
+  max-width: 500px;
+}
+
+/* footer */
+footer {
+  background: rgba(11, 10, 12, 0.6);
+}
+.footer-area {
+  padding: 70px 0 40px 0;
+}
+.footer-item a img {
+  margin-bottom: 10px;
+}
+
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-item ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.footer-item h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.footer-item:first-child {
+  flex-basis: 30%;
+}
+.footer-item:first-child p {
+  max-width: 300px;
+}
+
+.copyright {
+  padding: 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.copyright p {
+  color: rgba(255, 255, 255, 0.7);
+}
+.copyright ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+.copyright ul li a img {
+  width: 21px;
+  height: 21px;
 }
