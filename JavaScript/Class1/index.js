@@ -17,12 +17,13 @@ var abc = {
   c: 10,
   d: {
     a: "da",
+    b: "sdfds",
   },
   f: function () {
     return "F Function";
   },
 };
-// abc.a
+// abc.d.a
 
 // array
 var abcArray = [12, "hsjdhfjsdh", 10, "hsjdfhjdsh"];
@@ -31,3 +32,29 @@ var abcArray = [12, "hsjdhfjsdh", 10, "hsjdfhjdsh"];
 abc.a = 100;
 
 console.log(abc);
+
+// 21/06/2023 - DOM Manipulation
+var header = document.getElementById("header");
+
+header.innerHTML = "<span>React</span>";
+
+header.classList.add("test");
+header.classList.remove("another");
+header.classList.replace("test", "another2");
+
+console.log(header.classList.contains("test"));
+
+header.setAttribute("title", "A another title");
+
+console.log(header.getAttribute("title"));
+
+header.addEventListener("click", function () {
+  // header.classList.toggle("toggle");
+  alert("Hi");
+});
+
+document.getElementById("clickHere").addEventListener("click", function () {
+  if (confirm("Are you sure to remove H1")) {
+    header.remove();
+  }
+});
