@@ -268,9 +268,6 @@ nav .navbar-nav li a.active {
   flex-basis: 40%;
 }
 
-.testimonial-items {
-  gap: 60px;
-}
 .testimonial-item.active,
 .testimonial-item:hover {
   background: var(--dark-gradient);
@@ -278,12 +275,6 @@ nav .navbar-nav li a.active {
 .testimonial-item {
   padding: 60px 40px;
   border-radius: 20px;
-  flex-basis: 33.33%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
 }
 .testimonial-item > img {
   height: 27px;
@@ -388,4 +379,12 @@ footer {
 .copyright ul li a img {
   width: 21px;
   height: 21px;
+}
+
+/* swiper */
+.swiper-pagination-bullet {
+  background-color: #def9fa;
+}
+.testimonial-swiper-pagination {
+  text-align: center;
 }

@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HooBank</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <!-- navigation -->
     <header>
       <div class="container">
-        <nav>
+        <nav id="nav">
           <a href="#" class="nav-brand"
             ><img src="assets/images/logo.svg" alt=""
           /></a>
+          <img
+            id="icon"
+            style="display: none"
+            src="assets/images/menu.svg"
+            alt=""
+          />
           <ul class="navbar-nav">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About Us</a></li>
@@ -173,49 +185,67 @@
             anywhere on the planet.
           </p>
         </div>
-        <div class="row testimonial-items">
-          <div class="testimonial-item active">
-            <img src="assets/images/quotes.svg" alt="" />
-            <p>
-              Money is only a tool. It will take you wherever you wish, but it
-              will not replace you as the driver.
-            </p>
-            <div class="reviewer">
-              <img src="assets/images/people01.png" alt="" />
-              <div>
-                <h4>Herman Jensen</h4>
-                <span>Founder & Leader</span>
+
+        <div class="container testimonial-swiper" style="overflow: hidden">
+          <div class="row testimonial-items swiper-wrapper">
+            <div class="testimonial-item active swiper-slide">
+              <img src="assets/images/quotes.svg" alt="" />
+              <p>
+                Money is only a tool. It will take you wherever you wish, but it
+                will not replace you as the driver.
+              </p>
+              <div class="reviewer">
+                <img src="assets/images/people01.png" alt="" />
+                <div>
+                  <h4>Herman Jensen</h4>
+                  <span>Founder & Leader</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item swiper-slide">
+              <img src="assets/images/quotes.svg" alt="" />
+              <p>
+                Money makes your life easier. If you're lucky to have it, you're
+                lucky.
+              </p>
+              <div class="reviewer">
+                <img src="assets/images/people02.png" alt="" />
+                <div>
+                  <h4>Steve Mark</h4>
+                  <span>Founder & Leader</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item swiper-slide">
+              <img src="assets/images/quotes.svg" alt="" />
+              <p>
+                It is usually people in the money business, finance, and
+                international trade that are really rich.
+              </p>
+              <div class="reviewer">
+                <img src="assets/images/people03.png" alt="" />
+                <div>
+                  <h4>Kenn Gallagher</h4>
+                  <span>Founder & Leader</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-item swiper-slide">
+              <img src="assets/images/quotes.svg" alt="" />
+              <p>
+                It is usually people in the money business, finance, and
+                international trade that are really rich.
+              </p>
+              <div class="reviewer">
+                <img src="assets/images/people03.png" alt="" />
+                <div>
+                  <h4>Kenn Gallagher</h4>
+                  <span>Founder & Leader</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="testimonial-item">
-            <img src="assets/images/quotes.svg" alt="" />
-            <p>
-              Money makes your life easier. If you're lucky to have it, you're
-              lucky.
-            </p>
-            <div class="reviewer">
-              <img src="assets/images/people02.png" alt="" />
-              <div>
-                <h4>Steve Mark</h4>
-                <span>Founder & Leader</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-item">
-            <img src="assets/images/quotes.svg" alt="" />
-            <p>
-              It is usually people in the money business, finance, and
-              international trade that are really rich.
-            </p>
-            <div class="reviewer">
-              <img src="assets/images/people03.png" alt="" />
-              <div>
-                <h4>Kenn Gallagher</h4>
-                <span>Founder & Leader</span>
-              </div>
-            </div>
-          </div>
+          <div class="testimonial-swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -321,13 +351,7 @@
       </div>
     </footer>
 
-    <script>
-      fullName("Mr.", "X");
-      fullName("Mr.", "Y");
-
-      function fullName(firstName) {
-        console.log(firstName);
-      }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

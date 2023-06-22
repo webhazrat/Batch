@@ -58,3 +58,8 @@ document.getElementById("clickHere").addEventListener("click", function () {
     header.remove();
   }
 });
+
+var span = document.createElement("span");
+span.innerText = "New Element";
+
+header.insertAdjacentElement("beforebegin", span);
