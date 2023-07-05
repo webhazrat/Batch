@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1400px;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        gap: 30px;
+      }
+      .food-category {
+        max-width: 400px;
+        position: relative;
+      }
+      .food-category > img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .food-category:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 50.52%,
+          rgba(0, 0, 0, 0.94) 100%
+        );
+        border-radius: 10px;
+      }
+
+      .category-description {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+        padding: 30px;
+        border-radius: 10px;
+        z-index: 3;
+      }
+      .category-description h3 {
+        margin: 0;
+        color: #fff;
+      }
+      .category-description span {
+        color: #fff;
+      }
+      .category-description a {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #fff;
+        text-decoration: none;
+      }
+      .category-description a img {
+        height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <section style="background-color: #f5f5f5; padding: 100px 0">
+      <div class="container">
+        <div class="row">
+          <div class="food-category">
+            <img src="category.svg" alt="" />
+            <div class="category-description">
+              <div>
+                <h3>Crispy Daal Pakoda</h3>
+                <span>By Chef Shilpa</span>
+              </div>
+              <a href="#">View More <img src="arrow.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="food-category">
+            <img src="category.svg" alt="" />
+            <div class="category-description">
+              <div>
+                <h3>Crispy Daal Pakoda</h3>
+                <span>By Chef Shilpa</span>
+              </div>
+              <a href="#">View More <img src="arrow.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="food-category">
+            <img src="category.svg" alt="" />
+            <div class="category-description">
+              <div>
+                <h3>Crispy Daal Pakoda</h3>
+                <span>By Chef Shilpa</span>
+              </div>
+              <a href="#">View More <img src="arrow.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="food-category">
+            <img src="category.svg" alt="" />
+            <div class="category-description">
+              <div>
+                <h3>Crispy Daal Pakoda</h3>
+                <span>By Chef Shilpa</span>
+              </div>
+              <a href="#">View More <img src="arrow.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

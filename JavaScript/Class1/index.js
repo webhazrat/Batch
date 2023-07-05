@@ -31,7 +31,7 @@ var abcArray = [12, "hsjdhfjsdh", 10, "hsjdfhjdsh"];
 
 abc.a = 100;
 
-console.log(abc);
+console.log(typeof abc.f);
 
 // 21/06/2023 - DOM Manipulation
 var header = document.getElementById("header");
