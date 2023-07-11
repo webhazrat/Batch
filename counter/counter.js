@@ -10,6 +10,8 @@ class Counter {
     this.speed = speed;
     this.counter();
   }
+
+  // This is a function for counter
   counter() {
     const counters = document.querySelectorAll(this.selector);
     counters.forEach((item) => {
